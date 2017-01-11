@@ -1,0 +1,22 @@
+{
+  "name": "fusingly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "author": "aluanh@gmail.com",
+  "license": "Public Domain",
+  "scripts": {
+    "webpack": "webpack",
+    "http-server": "http-server",
+    "start": "npm install && npm run webpack && npm run http-server",
+    "postinstall": "move post-install-overwrites-fusedts.d.ts node_modules/fuse.js/index.d.ts"
+  },
+  "dependencies": {
+    "fuse.js": "^2.6.1"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "ts-loader": "^1.3.3",
+    "webpack": "^2.2.0-rc.4"
+  }
+}
